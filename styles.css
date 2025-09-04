@@ -1,0 +1,117 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* 现代无衬线字体 */
+  background-color: #1b1b32; /* 深色背景（原版配色） */
+  color: white; /* 文字白色 */
+  line-height: 1.6; /* 行高：提升可读性 */
+  padding: 2rem 1rem; /* 上下内边距：避免内容贴边 */
+}
+
+#title {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+#description {
+  text-align: center;
+  font-style: italic; /* 斜体（原版效果） */
+  color: #d0d0d5; /* 浅灰色文字：区分标题 */
+  margin-bottom: 2rem;
+}
+
+#survey-form {
+  max-width: 700px; /* 最大宽度：避免大屏幕上太宽 */
+  margin: 0 auto; /* 水平居中 */
+  background-color: #2a2a40; /* 表单背景（比页面背景浅） */
+  padding: 2.5rem;
+  border-radius: 8px; /* 圆角：柔和效果 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* 阴影：提升层次感 */
+}
+
+fieldset {
+  border: none; /* 隐藏默认边框 */
+  margin-bottom: 1.5rem; /* 字段集之间的间距 */
+  padding: 0.5rem 0;
+}
+
+legend {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  color: #f0f0f5;
+}
+
+label {
+  display: block; /* 每个 label 独占一行 */
+  margin-bottom: 0.8rem;
+  font-size: 1.3rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 0.7rem; /* 统一内边距 */
+  margin-top: 0.3rem;
+  border: 1px solid #4a4a6a; /* 统一边框 */
+  border-radius: 4px;
+  background-color: white;
+  color: #1b1b32;
+  font-size: 1rem;
+  box-sizing: border-box; /* 确保padding不会影响总宽度 */
+  height: 40px; /* 固定高度，确保完全对齐 */
+}
+
+/* 保持单选框/复选框的原有样式 */
+.inline {
+  width: unset;
+  margin-right: 0.5rem;
+  margin-top: 0;
+  vertical-align: middle;
+  height: auto; /* 单选/复选框不需要固定高度 */
+}
+
+.inline-label {
+  font-size: 1.2rem; /* 数值越大，文字越大，按需调整 */
+}
+
+#submit {
+  width: 100%;
+  background-color: #37af65; /* 绿色按钮（原版配色） */
+  color: white;
+  border: none;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer; /* 鼠标悬浮：指针样式 */
+  transition: background-color 0.3s; /* 背景色过渡：柔和效果 */
+}
+
+#submit:hover {
+  background-color: #2d9055; /*  hover 时：深一点的绿色 */
+}
+
+textarea {
+  margin-top: 0.9rem; /* 增大顶部间距，数值越大间距越宽 */
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #4a4a6a;
+  border-radius: 4px;
+  background-color: white;
+  color: #1b1b32;
+  font-size: 1rem;
+  resize: vertical;
+  min-height: 100px;
+  box-sizing: border-box;
+}
+
+fieldset:last-of-type {
+  margin-top: -1rem; /* 负值会减小与上方元素的距离，数值越大上移越多 */
+}
+
+/* 可选：单独调整评论文字与上方元素的距离 */
+fieldset:last-of-type label {
+  margin-top: -0.5rem; /* 进一步微调文字位置 */
+}
